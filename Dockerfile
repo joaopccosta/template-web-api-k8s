@@ -12,6 +12,6 @@ COPY --from=build /opt/venv /opt/venv
 COPY . app
 
 ENV PATH="/opt/venv/bin:$PATH"
-
+USER 9000
 EXPOSE 8080
 CMD ["python3", "app/src/api.py"]
