@@ -25,3 +25,10 @@ helm:
 publish: distribute build-docker publish-docker
 
 deploy: helm
+
+# A shortcoming of using minikube is that you must access node_ip:external_svc_port as
+# no actual loadbalancer exists to assign external ips.
+# https://kubernetesquestions.com/questions/61021389
+# https://docs.dapr.io/operations/hosting/kubernetes/cluster/setup-minikube/#troubleshooting
+access:
+	minikube service ${APP_NAME}
