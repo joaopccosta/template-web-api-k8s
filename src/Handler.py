@@ -1,5 +1,4 @@
 class Handler:
-
     def create_task(self, task):
         return True
 

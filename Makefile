@@ -32,3 +32,6 @@ deploy: helm
 # https://docs.dapr.io/operations/hosting/kubernetes/cluster/setup-minikube/#troubleshooting
 access:
 	minikube service ${APP_NAME}
+
+remove:
+	helm uninstall ${APP_NAME}
