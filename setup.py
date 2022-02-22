@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     # Application name:
-    name="template-web-api-k8s",
+    name="web-api",
 
     # Version number (initial):
     version="1.0.0",
@@ -22,12 +22,12 @@ setup(
 
     #
     # license="LICENSE.txt",
-    # description="Useful towel-related stuff.",
+    description="A template web api application using flask.",
 
     long_description=open("README.md").read(),
 
     # Dependent packages (distributions)
-    # install_requires=[
-    #     "flask",
-    # ],
+    install_requires=[
+        "flask",
+    ],
 )

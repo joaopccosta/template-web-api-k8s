@@ -1,5 +1,5 @@
-run_local:
-	python3 src/api.py
+build-docker:
+	docker build -t template-web-api-k8s .
 
 distribute:
-	python3 setup.py sdist
+	python setup.py sdist
