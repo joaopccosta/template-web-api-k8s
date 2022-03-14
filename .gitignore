@@ -5,4 +5,4 @@ dist
 MANIFEST
 *.tgz
 template-web-api-k8s/charts
-grafana-pass.txt
+monitoring/grafana-pass.txt
